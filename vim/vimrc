@@ -1,0 +1,23 @@
+" show colors
+syntax on
+
+" highlight search
+set hlsearch
+
+set autoread
+
+" show line numbers
+set number
+
+" tabs
+set ts=2
+set sw=2
+set softtabstop=2
+set expandtab
+" backspace problem
+set backspace=2
+
+" map ^s :w
+nnoremap <C-s> :w<cr>
+
+au FileType php,sh,c,cpp,java set cindent autoindent

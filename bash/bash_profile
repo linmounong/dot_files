@@ -1,0 +1,18 @@
+# it's for mac os... maybe
+
+export CLICOLOR=1
+
+# reverse prompt color
+export PS1='\[\e[7m\]\u:\w\$\[\e[0m\] '
+
+# default editor
+export EDITOR='vim'
+
+# not sure if it matters
+export PATH="$PATH":/usr/local/sbin
+
+# short name for tmux...
+alias mux='tmux'
+
+# vim mode
+set -o vi

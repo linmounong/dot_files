@@ -1,18 +1,22 @@
-# it's for mac os... maybe
-
-export CLICOLOR=1
-
-# reverse prompt color
 export PS1='\[\e[7m\]\u:\w\$\[\e[0m\] '
-
-# default editor
+export CLICOLOR=1
 export EDITOR='vim'
-
-# not sure if it matters
+export PATH="$PATH":~/.depot_tools
 export PATH="$PATH":/usr/local/sbin
-
-# short name for tmux...
+export PATH="$PATH":/Volumes/Free/lin/adt/sdk/platform-tools
+export PATH="/usr/local/mysql/bin:$PATH"
 alias mux='tmux'
 
 # vim mode
 set -o vi
+
+# pebble
+export PATH=/Volumes/Free/lin/pebble-dev/PebbleSDK-current/bin:$PATH
+alias pb='pebble'
+alias pbb='pb build'
+alias pbip='pb install --phone'
+alias cdp='cd pebble-dev/PebbleSDK-current'
+export pip=192.168.1.5
+
+# clear
+alias c='clear'

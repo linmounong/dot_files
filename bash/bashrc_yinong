@@ -10,13 +10,5 @@ alias mux='tmux'
 # vim mode
 set -o vi
 
-# pebble
-export PATH=/Volumes/Free/lin/pebble-dev/PebbleSDK-current/bin:$PATH
-alias pb='pebble'
-alias pbb='pb build'
-alias pbip='pb install --phone'
-alias cdp='cd pebble-dev/PebbleSDK-current'
-export pip=192.168.1.5
-
 # clear
 alias c='clear'

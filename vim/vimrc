@@ -2,6 +2,24 @@
 execute pathogen#infect()
 filetype plugin indent on
 
+" indentLine config
+" vertical line indentation
+let g:indentLine_color_term = 239
+let g:indentLine_color_gui = '#09AA08'
+let g:indentLine_char = '┆'
+
+" toggle NERDTree
+nmap <C-n> :NERDTreeToggle<CR>
+
+" turning off compatible for eclim
+set nocompatible
+
+" CtrlP
+" Ignore these directories
+set wildignore+=*/build/**
+" disable caching
+let g:ctrlp_use_caching=0
+
 " show me some colors
 syntax on
 
@@ -10,7 +28,7 @@ set hlsearch
 
 set autoread
 
-" show line numbers
+" showing line numbers
 set number
 
 " tabs
@@ -22,10 +40,14 @@ set expandtab
 " resolving backspace problem
 set backspace=2
 
-" map ^s :w
+" mapping ^s to :w
 nnoremap <C-s> :w<cr>
 
 au FileType php,sh,c,cpp,java set cindent autoindent
-augroup filetype
-    autocmd! BufRead,BufNewFile BUILD set filetype=blade
-augroup end
+"augroup filetype
+"    autocmd! BufRead,BufNewFile BUILD set filetype=blade
+"augroup end
+
+" bash-like command completion
+set wildmode=longest,list,full
+set wildmenu

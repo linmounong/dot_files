@@ -44,11 +44,14 @@ set backspace=2
 " mapping ^s to :w
 nnoremap <C-s> :w<cr>
 
-au FileType php,sh,c,cpp,java set cindent autoindent
-"augroup filetype
-"    autocmd! BufRead,BufNewFile BUILD set filetype=blade
-"augroup end
+au FileType proto,py,php,sh,c,cpp,java set cindent autoindent
 
 " bash-like command completion
 set wildmode=longest,list,full
 set wildmenu
+
+" for wrapping Chinese
+set formatoptions+=mM
+
+" utf8
+set encoding=utf-8

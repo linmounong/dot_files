@@ -1,7 +1,17 @@
-export PS1='\[\e[7m\]\u:\w\$\[\e[0m\] '
+export site_path='/Users/linyinong/gerrit'
+export PS1='\[\e[7m\]\u@\h:\w\$\[\e[0m\] '
 export CLICOLOR=1
 export EDITOR='vim'
+export PATH="$HOME/bin:$PATH"
+
+# Go
+export PATH="/usr/local/go/bin:$PATH"
+export GOPATH=$HOME/go
+export PATH="$PATH:$GOPATH/bin"
+
 alias mux='tmux'
+alias l='ls -l'
+alias vim='/usr/local/bin/vim'
 
 # vim mode
 set -o vi

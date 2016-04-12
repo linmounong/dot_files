@@ -1,0 +1,10 @@
+[push]
+	default = simple
+[user]
+	name = linmounong
+	email = linmounong@gmail.com
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status

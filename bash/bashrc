@@ -4,6 +4,13 @@ case "$OSTYPE" in
   *)        OS='default' ;;
 esac
 
+if [[ "$OS" == 'mac' ]]; then
+  alias vim='/usr/local/bin/vim'
+  alias l='ls -CF'
+  # Postgres
+  export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
+fi
+
 export PS1='\[\e[7m\]\u@\h:\w\$\[\e[0m\] '
 export CLICOLOR=1
 export EDITOR='vim'
@@ -14,12 +21,12 @@ export PATH="/usr/local/go/bin:$PATH"
 export GOPATH=$HOME/go
 export PATH="$PATH:$GOPATH/bin"
 
-alias mux='tmux'
+# ruby
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+alias r='rails'
 
-if [[ "$OS" == 'mac' ]]; then
-  alias vim='/usr/local/bin/vim'
-  alias l='ls -CF'
-fi
+# tmux
+alias mux='tmux'
 
 # vim mode
 set -o vi
@@ -29,3 +36,7 @@ alias c='clear'
 
 # ^s
 stty -ixon
+
+# git-completion
+# https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks
+source ~/git-completion.sh

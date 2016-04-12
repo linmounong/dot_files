@@ -1,10 +1,18 @@
-[push]
-	default = simple
 [user]
-	name = linmounong
-	email = linmounong@gmail.com
+  name = linmounong
+  email = linmounong@gmail.com
+[push]
+  default = simple
+[core]
+  editor = vim
+  whitespace = off
+  excludesfile = ~/.gitignore
+[color]
+  ui = true
+[push]
+  default = matching
 [alias]
-	co = checkout
-	br = branch
-	ci = commit
-	st = status
+  co = checkout
+  br = branch
+  ci = commit
+  st = status

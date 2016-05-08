@@ -9,6 +9,10 @@ if [[ "$OS" == 'mac' ]]; then
   alias l='ls -CF'
   # Postgres
   export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
+  # git-completion
+  # https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks
+  # ubuntu: moved to /etc/bash_compeletion.d/
+  source ~/git-completion.sh
 fi
 
 export PS1='\[\e[7m\]\u@\h:\w\$\[\e[0m\] '
@@ -36,7 +40,3 @@ alias c='clear'
 
 # ^s
 stty -ixon
-
-# git-completion
-# https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks
-source ~/git-completion.sh

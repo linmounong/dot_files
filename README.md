@@ -10,6 +10,7 @@ Install
 * [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
 * pathogen -- vim/pathogen.sh
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
+* [vim-easy-align](https://github.com/junegunn/vim-easy-align)
 * [protobuf](https://github.com/google/protobuf)
 * [pycharm](https://www.jetbrains.com/pycharm/download)
 * [logitech options](http://support.logitech.com/en_us/software/options) and

@@ -40,3 +40,8 @@ alias c='clear'
 
 # ^s
 stty -ixon
+
+# bazel
+if bazel version >/dev/null 2>&1; then
+  source ~/bazel-complete.bash
+fi

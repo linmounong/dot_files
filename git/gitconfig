@@ -9,8 +9,6 @@
   excludesfile = ~/.gitignore
 [color]
   ui = true
-[push]
-  default = matching
 [alias]
   co = checkout
   br = branch

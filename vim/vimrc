@@ -1,12 +1,7 @@
 " plugins
 execute pathogen#infect()
+syntax on
 filetype plugin indent on
-
-" indentLine config
-" vertical line indentation
-let g:indentLine_color_term = 239
-let g:indentLine_color_gui = '#09AA08'
-let g:indentLine_char = '┆'
 
 " toggle NERDTree
 nmap <C-n> :NERDTreeToggle<CR>
@@ -33,8 +28,8 @@ set autoread
 set number
 
 " tabs
-set ts=2
-set sw=2
+set tabstop=2
+set shiftwidth=2
 set softtabstop=2
 set expandtab
 
@@ -44,13 +39,13 @@ set backspace=2
 " mapping ^s to :w
 nnoremap <C-s> :w<cr>
 
-au FileType proto,py,php,sh,c,cpp,java set cindent autoindent
+au FileType proto,php,sh,c,cpp,java set cindent autoindent
 
 " bash-like command completion
 set wildmode=longest,list,full
 set wildmenu
 
-" for wrapping Chinese
+" for wrapping Chinese UTF-8
 set formatoptions+=mM
 
 " utf8

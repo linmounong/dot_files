@@ -15,7 +15,7 @@ set wildignore+=*/build/**
 set wildignore+=*/target/**
 let g:ctrlp_cmd='CtrlP :pwd'
 let g:ctrlp_working_path_mode = 0
-
+set wildignore+=*pyc
 " disable caching
 "let g:ctrlp_use_caching=0
 

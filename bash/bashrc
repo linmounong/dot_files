@@ -11,7 +11,7 @@ if [[ "$OS" == 'mac' ]]; then
   export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
   # git-completion
   # https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks
-  # ubuntu: moved to /etc/bash_compeletion.d/
+  # ubuntu: moved to /etc/bash_completion.d/
   source ~/git-completion.sh
 fi
 
@@ -40,11 +40,6 @@ alias c='clear'
 
 # ^s
 stty -ixon
-
-# bazel
-if bazel version >/dev/null 2>&1; then
-  source ~/bazel-complete.bash
-fi
 
 # Setting PATH for Python 2.7
 # The orginal version is saved in .bash_profile.pysave

@@ -23,6 +23,9 @@ Install
 * sogou pinyin [linux](http://pinyin.sogou.com/linux/?r=pinyin) /
   [mac](http://pinyin.sogou.com/mac/?r=pinyin) /
   [windows](http://pinyin.sogou.com/)
+* [docker](https://docs.docker.com/linux/step_one/) `curl -fsSL
+  https://get.docker.com/ | sh`
+
 
 Set up
 

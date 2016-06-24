@@ -65,3 +65,6 @@ function frameworkpython {
 
 # added by Anaconda2 4.0.0 installer
 export PATH="/Users/linyinong/anaconda2/bin:$PATH"
+
+# rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

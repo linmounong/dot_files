@@ -67,4 +67,5 @@ function frameworkpython {
 export PATH="/Users/linyinong/anaconda2/bin:$PATH"
 
 # rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

@@ -7,7 +7,7 @@ Install
 * [bazel](http://bazel.io/docs/install.html)
 * jdk8 -- see bazel
 * [tmux](http://tmux.github.io/)
-* [tpm](https://github.com/tmux-plugins/tpm)
+* tpm `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 * [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
 * pathogen -- vim/pathogen.sh
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)

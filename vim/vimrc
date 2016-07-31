@@ -58,3 +58,6 @@ set encoding=utf-8
 xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
+
+" yapf
+map <C-M> :call yapf#YAPF()<cr>

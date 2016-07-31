@@ -64,7 +64,7 @@ function frameworkpython {
 }
 
 # added by Anaconda2 4.0.0 installer
-export PATH="/Users/linyinong/anaconda2/bin:$PATH"
+# export PATH="/Users/linyinong/anaconda2/bin:$PATH"
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -73,3 +73,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # ssh forwarding
 alias setauth='echo "export SSH_AUTH_SOCK=$SSH_AUTH_SOCK" > ~/.auth_ssh'
 alias loadauth='. ~/.auth_ssh'
+
+# bazel
+alias cdb='cd $(bazel info workspace)'

@@ -4,7 +4,7 @@ syntax on
 filetype plugin indent on
 
 " toggle NERDTree
-nmap <C-n> :NERDTreeToggle<CR>
+nmap <C-n> :NERDTreeToggle %<CR>
 
 " turning off compatible for eclim
 set nocompatible

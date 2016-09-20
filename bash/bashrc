@@ -15,6 +15,7 @@ if [[ "$OS" == 'mac' ]]; then
   source ~/git-completion.sh
   # bazel build scripts:bash_completion
   source ~/bazel-complete.bash
+  export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 fi
 
 export PS1='\[\e[7m\]\u@\h:\w\$\[\e[0m\] '
@@ -43,28 +44,11 @@ alias c='clear'
 # ^s
 stty -ixon
 
-# Setting PATH for Python 2.7
-# The orginal version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-export PATH
-
 # docker
 alias dockerkillall='docker kill $(docker ps -q)'
 alias dockercleanc='printf "\n>>> Deleting stopped containers\n\n" && docker rm $(docker ps -a -q)'
 alias dockercleani='printf "\n>>> Deleting untagged images\n\n" && docker rmi $(docker images -q -f dangling=true)'
 alias dockerclean='dockercleanc || true && dockercleani'
-
-# fix python
-function frameworkpython {
-    if [[ ! -z "$VIRTUAL_ENV" ]]; then
-        PYTHONHOME=$VIRTUAL_ENV /usr/local/bin/python "$@"
-    else
-        /usr/local/bin/python "$@"
-    fi
-}
-
-# added by Anaconda2 4.0.0 installer
-# export PATH="/Users/linyinong/anaconda2/bin:$PATH"
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"

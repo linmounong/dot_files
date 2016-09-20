@@ -7,7 +7,7 @@ Install
 * [bazel](http://bazel.io/docs/install.html)
 * jdk8 -- see bazel
 * [tmux](http://tmux.github.io/)
-* tpm `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+* tpm -- tmux/tmp.sh
 * [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
 * pathogen -- vim/pathogen.sh
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
@@ -35,7 +35,7 @@ Set up
 * .editrc
 * .inputrc
 * .gitconfig
-* TODO (mac) bettertouchtool configs
+* bettertouchtool configs
 * jetbrains configs
 
 Ubuntu

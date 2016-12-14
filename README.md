@@ -36,6 +36,7 @@ Set up
 * .editrc
 * .inputrc
 * .gitconfig
+* .style.yapf
 * bettertouchtool configs
 * jetbrains configs
 

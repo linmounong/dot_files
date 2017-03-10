@@ -66,3 +66,5 @@ alias adbd='while true; do date; adb devices; sleep 1; done'
 
 alias a='source ~/tiger_env/bin/activate'
 alias da='deactivate'
+
+export PATH="$HOME/.node/bin:$PATH"

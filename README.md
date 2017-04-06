@@ -4,14 +4,13 @@ For a new system:
 
 Install
 
+* bash -- bash/setup.sh
+* vim -- vim/setup.sh
+* tmux -- tmux/setup.sh
+* git -- git/setup.sh
+* tools -- tools/setup.bash
 * [bazel](http://bazel.io/docs/install.html)
 * jdk8 -- see bazel
-* [tmux](http://tmux.github.io/)
-* tpm -- tmux/tmp.sh
-* [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
-* pathogen -- vim/pathogen.sh
-* [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
-* [vim-easy-align](https://github.com/junegunn/vim-easy-align)
 * [protobuf](https://github.com/google/protobuf)
 * [pycharm](https://www.jetbrains.com/pycharm/download)
 * [logitech options](http://support.logitech.com/en_us/software/options) and
@@ -25,17 +24,9 @@ Install
   [mac](http://pinyin.sogou.com/mac/?r=pinyin) /
   [windows](http://pinyin.sogou.com/)
 * [docker](https://docs.docker.com/linux/step_one/) `curl -fsSL https://get.docker.com/ | sh`
-* [conda](https://www.continuum.io/downloads)
-* vnc https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-16-04
 
 Set up
 
-* .bashrc
-* .vimrc
-* .tmux.conf
-* .editrc
-* .inputrc
-* .gitconfig
 * .style.yapf
 * bettertouchtool configs
 * jetbrains configs

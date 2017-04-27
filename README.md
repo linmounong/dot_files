@@ -34,6 +34,6 @@ Set up
 Ubuntu
 
 ```bash
-sudo apt-get install python python-dev curl git vim gcc
+sudo apt-get install python python-dev curl vim gcc
 sudo apt-get install libffi-dev libssl-dev build-essential
 ```

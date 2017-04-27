@@ -41,6 +41,12 @@ nnoremap <C-s> :w<cr>
 
 au FileType proto,php,sh,c,cpp,java set cindent autoindent
 
+" vim-clang-format
+autocmd FileType c,cpp,objc ClangFormatAutoEnable
+autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
+autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
+
+
 " bash-like command completion
 set wildmode=longest,list,full
 set wildmenu
@@ -55,4 +61,3 @@ set encoding=utf-8
 xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
-

@@ -2,7 +2,7 @@
 # Exit on error #
 set -e
 
-WORKDIR=~/tmuxtmp
+WORKDIR=~/programs
 TMUX_VERSION=2.2
 
 # Clean up #
@@ -48,8 +48,8 @@ do_ncurses() {
 ############
 do_tmux() {
   cd $WORKDIR/test
-  # wget -O tmux-${TMUX_VERSION}.tar.gz http://github.com/tmux/tmux/releases/download/${TMUX_VERSION}/tmux-${TMUX_VERSION}.tar.gz
-  # tar xvzf tmux-${TMUX_VERSION}.tar.gz
+  wget -O tmux-${TMUX_VERSION}.tar.gz http://github.com/tmux/tmux/releases/download/${TMUX_VERSION}/tmux-${TMUX_VERSION}.tar.gz
+  tar xvzf tmux-${TMUX_VERSION}.tar.gz
   cd tmux-${TMUX_VERSION}
 
   # open configure and find the line that says:
@@ -73,4 +73,7 @@ do_tmux() {
   cp tmux ~/bin/tmux
 }
 
+cleanup
+do_libevent
+do_ncurses
 do_tmux

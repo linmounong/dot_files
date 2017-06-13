@@ -68,3 +68,5 @@ alias a='source ~/tiger_env/bin/activate'
 alias da='deactivate'
 
 export PATH="$HOME/.node/bin:$PATH"
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib/fst

@@ -34,8 +34,8 @@ Set up
 Ubuntu
 
 ```bash
-sudo apt-get install python-dev curl vim gcc libffi-dev
+sudo apt-get install curl vim gcc libffi-dev
 sudo apt-get install libffi-dev libssl-dev build-essential
 # And download python from python.org
-# ./configure --enable-unicode=ucs4 --enable-optimizations && make -j8 && sudo make install
+# ./configure --enable-unicode=ucs4 --enable-optimizations --enable-pic && make -j8 && sudo make install
 ```

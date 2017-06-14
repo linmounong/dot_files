@@ -1,5 +1,11 @@
+# clang-format
 sudo apt-get install vim clang-format-3.8
-sduo ln -s /usr/bin/clang-format-3.8 /usr/bin/clang-format
+sudo ln -s /usr/bin/clang-format-3.8 /usr/bin/clang-format
+
+# js-beautify
+npm install -g js-beautify
+ln -s ~/git/dot_files/vim/jsbeautifyrc ~/.jsbeautifyrc
+
 ln -s ~/git/dot_files/vim/vimrc ~/.vimrc
 mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.vim/indent
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
@@ -11,8 +17,8 @@ git clone https://github.com/scrooloose/nerdtree.git
 git clone https://github.com/google/vim-maktaba.git  # used by codefmt
 git clone https://github.com/google/vim-glaive.git  # used by codefmt
 git clone https://github.com/google/vim-codefmt.git
-git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
-echo "run in vim: :GoInstallBinaries"
+git clone https://github.com/fatih/vim-go.git
+echo "run in vim :GoInstallBinaries"
 
 cd ~/.vim/indent
 wget http://www.vim.org/scripts/download_script.php?src_id=14772 -O cpp.vim

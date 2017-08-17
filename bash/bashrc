@@ -72,3 +72,6 @@ export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib/fst
 
 alias ssh-nopass='ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no'
+
+# vim -o
+alias vs="vim -O"

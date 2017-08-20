@@ -23,3 +23,7 @@ echo "run in vim :GoInstallBinaries"
 
 cd ~/.vim/indent
 wget http://www.vim.org/scripts/download_script.php?src_id=14772 -O cpp.vim
+
+# yapf
+pip install yapf==0.16.2
+ln -s ~/git/dot_files/vim/style.yapf ~/.style.yapf

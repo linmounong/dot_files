@@ -4,7 +4,7 @@ sudo ln -s /usr/bin/clang-format-3.8 /usr/bin/clang-format
 ln -s ~/git/dot_files/vim/clang-format ~/.clang-format
 
 # js-beautify
-npm install -g js-beautify
+sudo npm install -g js-beautify
 ln -s ~/git/dot_files/vim/jsbeautifyrc ~/.jsbeautifyrc
 
 ln -s ~/git/dot_files/vim/vimrc ~/.vimrc

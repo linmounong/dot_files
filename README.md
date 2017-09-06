@@ -30,6 +30,7 @@ Set up
 * .style.yapf
 * bettertouchtool configs
 * jetbrains configs
+* (ubuntu) screen share [link](https://askubuntu.com/questions/463486/can-no-longer-use-screen-share-to-connect-mac-to-ubuntu-since-upgrading-to-14-04)
 
 Ubuntu
 

@@ -50,10 +50,6 @@ alias dockercleanc='printf "\n>>> Deleting stopped containers\n\n" && docker rm 
 alias dockercleani='printf "\n>>> Deleting untagged images\n\n" && docker rmi $(docker images -q -f dangling=true)'
 alias dockerclean='dockercleanc || true && dockercleani'
 
-# rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
 # ssh forwarding
 alias sa='echo "export SSH_AUTH_SOCK=$SSH_AUTH_SOCK" > ~/.auth_ssh'
 alias la='. ~/.auth_ssh'
@@ -65,6 +61,7 @@ alias cdb='cd $(bazel info workspace)'
 alias adbd='while true; do date; adb devices; sleep 1; done'
 
 alias a='source ~/.env/bin/activate'
+alias at='source ~/.tenv/bin/activate'
 alias da='deactivate'
 
 export PATH="$HOME/.node/bin:$PATH"

@@ -15,7 +15,7 @@ else
   #turn off mouse acceleration
   for i in $hardwareIds; do
     xinput set-prop ${i} 'Device Accel Profile' -1
-    xinput set-prop ${i} 'Device Accel Velocity Scaling' 1
+    xinput set-prop ${i} 'Device Accel Velocity Scaling' 1.4
     xinput set-prop ${i} 'Device Accel Constant Deceleration' 1
   done
 fi

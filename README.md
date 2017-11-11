@@ -39,4 +39,9 @@ sudo apt-get install curl vim gcc libffi-dev
 sudo apt-get install libffi-dev libssl-dev build-essential
 # And download python from python.org
 # ./configure --enable-unicode=ucs4 --enable-optimizations --enable-pic && make -j8 && sudo make install
+
+# sysmon
+sudo add-apt-repository ppa:fossfreedom/indicator-sysmonitor
+sudo apt-get update
+sudo apt-get install indicator-sysmonitor
 ```

@@ -6,6 +6,7 @@ sudo ln -s /usr/bin/clang-format-3.8 /usr/bin/clang-format
 ln -s ~/git/dot_files/vim/clang-format ~/.clang-format
 
 # js-beautify
+sudo apt-get install npm
 sudo npm install -g js-beautify
 ln -s ~/git/dot_files/vim/jsbeautifyrc ~/.jsbeautifyrc
 
@@ -28,5 +29,6 @@ cd ~/.vim/indent
 wget http://www.vim.org/scripts/download_script.php?src_id=14772 -O cpp.vim
 
 # yapf
+sudo apt-get install python-pip
 pip install yapf==0.18.0
 ln -s ~/git/dot_files/vim/style.yapf ~/.style.yapf

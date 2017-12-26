@@ -44,4 +44,7 @@ sudo apt-get install libffi-dev libssl-dev build-essential
 sudo add-apt-repository ppa:fossfreedom/indicator-sysmonitor
 sudo apt-get update
 sudo apt-get install indicator-sysmonitor
+
+# ovpn
+sudo apt-get install network-manager-openvpn-gnome
 ```

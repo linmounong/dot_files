@@ -24,6 +24,8 @@ Install
   [mac](http://pinyin.sogou.com/mac/?r=pinyin) /
   [windows](http://pinyin.sogou.com/)
 * [docker](https://docs.docker.com/linux/step_one/) `curl -fsSL https://get.docker.com/ | sh`
+* [iterm2](https://www.iterm2.com/downloads.html) (mac)
+* homebrew (mac) `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
 Set up
 

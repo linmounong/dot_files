@@ -5,7 +5,7 @@ case "$OSTYPE" in
 esac
 
 if [[ "$OS" == 'mac' ]]; then
-  alias vim='/usr/local/bin/vim'
+  export PATH="/usr/local/bin:$PATH"
   alias l='ls -CF'
   # Postgres
   export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"

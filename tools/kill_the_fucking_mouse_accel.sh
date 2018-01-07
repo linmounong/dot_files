@@ -8,6 +8,7 @@ esac
 
 if [[ "$OS" == 'mac' ]]; then
   defaults write .GlobalPreferences com.apple.scrollwheel.scaling -1
+  defaults write .GlobalPreferences com.apple.mouse.scaling -1
 else
   #gets the hardware id's of all mice plugged into the system
   hardwareIds=$(xinput | grep -i logitech | awk '{print substr($(NF-3),4)}')

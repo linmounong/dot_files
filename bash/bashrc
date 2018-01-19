@@ -16,6 +16,9 @@ if [[ "$OS" == 'mac' ]]; then
   # bazel build scripts:bash_completion
   source ~/bazel-complete.bash
   export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+  if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+  fi
 fi
 
 export PS1='\[\e[7m\]\u@\h:\w\$\[\e[0m\] '

@@ -26,6 +26,11 @@ export CLICOLOR=1
 export EDITOR='vim'
 export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 
+# grep
+if [ ! -z "$GREP_OPTIONS" ]; then
+  alias grep="grep $GREP_OPTIONS"
+fi
+
 # Go
 export PATH="/usr/local/go/bin:$PATH"
 export GOPATH=$HOME/go

@@ -29,6 +29,7 @@ export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 # grep
 if [ ! -z "$GREP_OPTIONS" ]; then
   alias grep="grep $GREP_OPTIONS"
+  unset GREP_OPTIONS
 fi
 
 # Go

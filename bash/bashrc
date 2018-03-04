@@ -7,14 +7,10 @@ esac
 if [[ "$OS" == 'mac' ]]; then
   export PATH="/usr/local/bin:$PATH"
   alias l='ls -CF'
-  # Postgres
-  export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
   # completions
   # ubuntu: moved to /etc/bash_completion.d/
   # https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks
   source ~/git-completion.sh
-  # bazel build scripts:bash_completion
-  source ~/bazel-complete.bash
   export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
   if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
@@ -24,7 +20,7 @@ fi
 export PS1='\[\e[7m\]\u@\h:\w\$\[\e[0m\] '
 export CLICOLOR=1
 export EDITOR='vim'
-export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 
 # grep
 if [ ! -z "$GREP_OPTIONS" ]; then
@@ -36,10 +32,6 @@ fi
 export PATH="/usr/local/go/bin:$PATH"
 export GOPATH=$HOME/go
 export PATH="$PATH:$GOPATH/bin"
-
-# ruby
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-alias r='rails'
 
 # tmux
 alias mux='tmux'
@@ -64,12 +56,10 @@ alias dockerstats='docker stats $(docker ps --format {{.Names}})'
 alias sa='echo "export SSH_AUTH_SOCK=$SSH_AUTH_SOCK" > ~/.auth_ssh'
 alias la='. ~/.auth_ssh'
 
-# bazel
-alias cdb='cd $(bazel info workspace)'
-
 # adb devices
 alias adbd='while true; do date; adb devices; sleep 1; done'
 
+# virtualenv
 alias a='source ~/.env/bin/activate'
 alias at='source ~/.tenv/bin/activate'
 alias da='deactivate'

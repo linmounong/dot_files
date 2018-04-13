@@ -21,7 +21,7 @@ git clone https://github.com/scrooloose/nerdtree.git
 git clone https://github.com/google/vim-maktaba.git  # used by codefmt
 git clone https://github.com/google/vim-glaive.git  # used by codefmt
 git clone https://github.com/google/vim-codefmt.git
-git clone https://github.com/linmounong/vim-python-pep8-indent.git
+git clone https://github.com/Vimjas/vim-python-pep8-indent.git
 git clone https://github.com/fatih/vim-go.git
 echo "run in vim :GoInstallBinaries"
 

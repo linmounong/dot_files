@@ -64,6 +64,8 @@ alias a='source ~/.env/bin/activate'
 alias da='deactivate'
 alias an='source ~/.nodeenv/bin/activate'
 alias dan='node_deactivate'
+alias aa='source ~/anaconda2/bin/activate'
+alias daa='source ~/anaconda2/bin/deactivate'
 
 export PATH="$HOME/.node/bin:$PATH"
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib

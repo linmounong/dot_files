@@ -58,9 +58,18 @@ sudo apt-get install indicator-sysmonitor
 # ovpn
 sudo apt-get install network-manager-openvpn-gnome
 
-# nvidia and cuda
+
+# nvidia
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt-get update
+# for 1080ti
+sudo apt-get install nvidia-384
+# reboot
+# to remove
+#   sudo apt-get purge nvidia*
+
+# cuda
 # https://gist.github.com/wangruohui/df039f0dc434d6486f5d4d098aa52d07#install-nvidia-graphics-driver-via-apt-get
-sudo apt install nvidia-modprobe nvidia-384
 wget http://developer.download.nvidia.com/compute/cuda/7.5/Prod/local_installers/cuda_7.5.18_linux.run
 chmod +x cuda_7.5.18_linux.run
 ./cuda_7.5.18_linux.run --extract=$HOME

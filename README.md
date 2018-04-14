@@ -57,4 +57,17 @@ sudo apt-get install indicator-sysmonitor
 
 # ovpn
 sudo apt-get install network-manager-openvpn-gnome
+
+# nvidia and cuda
+# https://gist.github.com/wangruohui/df039f0dc434d6486f5d4d098aa52d07#install-nvidia-graphics-driver-via-apt-get
+sudo apt install nvidia-modprobe nvidia-384
+wget http://developer.download.nvidia.com/compute/cuda/7.5/Prod/local_installers/cuda_7.5.18_linux.run
+chmod +x cuda_7.5.18_linux.run
+./cuda_7.5.18_linux.run --extract=$HOME
+sudo ./cuda-linux64-rel-7.5.18-19867135.run
+
+# g++-4.9
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo apt-get update
+sudo apt-get install g++-4.9
 ```

@@ -33,6 +33,10 @@ export PATH="/usr/local/go/bin:$PATH"
 export GOPATH=$HOME/go
 export PATH="$PATH:$GOPATH/bin"
 
+# cuda
+export PATH="$PATH:/usr/local/cuda-7.5/bin"
+
+
 # tmux
 alias mux='tmux'
 

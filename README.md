@@ -29,7 +29,9 @@
     http://pinyin.sogou.com/mac/?r=pinyin
   * windows
     http://pinyin.sogou.com/
-* setpoints
+* logitech options
+  http://support.logitech.com/en_us/software/options
+* setpoint
   http://support.logitech.com/en_us/software/setpoint
 
 # mac
@@ -40,8 +42,11 @@
   https://www.iterm2.com/downloads.html
 * homebrew
   `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+* istat menus
+  https://bjango.com/mac/istatmenus/
+* mycloud sync
+  https://support.wdc.com/downloads.aspx?p=266&lang=en
 
-* [logitech options](http://support.logitech.com/en_us/software/options) and
 
 # ubuntu
 
@@ -57,7 +62,6 @@ sudo apt-get install indicator-sysmonitor
 
 # ovpn
 sudo apt-get install network-manager-openvpn-gnome
-
 
 # nvidia
 sudo add-apt-repository ppa:graphics-drivers/ppa

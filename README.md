@@ -74,10 +74,15 @@ sudo apt-get install nvidia-384
 
 # cuda
 # https://gist.github.com/wangruohui/df039f0dc434d6486f5d4d098aa52d07#install-nvidia-graphics-driver-via-apt-get
-wget http://developer.download.nvidia.com/compute/cuda/7.5/Prod/local_installers/cuda_7.5.18_linux.run
-chmod +x cuda_7.5.18_linux.run
-./cuda_7.5.18_linux.run --extract=$HOME
-sudo ./cuda-linux64-rel-7.5.18-19867135.run
+# https://developer.nvidia.com/cuda-80-ga2-download-archive
+wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run
+chmod +x cuda_8.0.61_375.26_linux-run
+./cuda_8.0.61_375.26_linux-run --extract=$PWD
+sudo ./cuda-linux64-rel-8.0.61-21551265.run
+sudo ./cuda-samples-linux-8.0.61-21551265.run
+wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/patches/2/cuda_8.0.61.2_linux-run
+chmod +x cuda_8.0.61.2_linux-run
+sudo ./cuda_8.0.61.2_linux-run
 
 # g++-4.9
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test

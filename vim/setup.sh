@@ -32,3 +32,6 @@ wget http://www.vim.org/scripts/download_script.php?src_id=14772 -O cpp.vim
 sudo apt-get install -y python-pip
 pip install yapf==0.18.0
 ln -s ~/git/dot_files/vim/style.yapf ~/.style.yapf
+
+# scala https://github.com/derekwyatt/vim-scala
+mkdir -p ~/.vim/{ftdetect,indent,syntax} && for d in ftdetect indent syntax ; do wget -O ~/.vim/$d/scala.vim https://raw.githubusercontent.com/derekwyatt/vim-scala/master/$d/scala.vim; done

@@ -46,6 +46,7 @@
   https://bjango.com/mac/istatmenus/
 * mycloud sync
   https://support.wdc.com/downloads.aspx?p=266&lang=en
+* disable mouse acceleration `defaults write .GlobalPreferences com.apple.mouse.scaling -1`
 
 
 # ubuntu

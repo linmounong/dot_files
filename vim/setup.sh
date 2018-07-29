@@ -1,4 +1,4 @@
-set -o
+set -e
 
 # clang-format
 sudo apt-get install -y vim clang-format-3.8

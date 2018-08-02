@@ -24,5 +24,6 @@ foreach (header ${headers})
 endforeach ()
 
 include_directories(.)
+include_directories(muse_recall/src)
 
 add_executable(pseudo_bin ${sources})

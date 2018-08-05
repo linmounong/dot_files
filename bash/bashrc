@@ -86,3 +86,5 @@ transfer() { if [ $# -eq 0 ]; then echo -e "No arguments specified. Usage:\necho
 
 # https://stackoverflow.com/questions/2720014/upgrading-all-packages-with-pip
 alias pipupgradeall="pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U"
+
+alias setproxy='export http_proxy=10.115.5.164:3128 https_proxy=10.115.5.164:3128'

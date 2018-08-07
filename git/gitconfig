@@ -1,6 +1,6 @@
 [user]
-  # name = linmounong
-  # email = linmounong@gmail.com
+  name = linmounong
+  email = linmounong@gmail.com
 [push]
   default = simple
 [core]

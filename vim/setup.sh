@@ -30,7 +30,7 @@ wget http://www.vim.org/scripts/download_script.php?src_id=14772 -O cpp.vim
 
 # yapf
 sudo apt-get install -y python-pip
-pip install yapf==0.18.0
+pip install --upgrade yapf==0.24.0
 ln -s ~/git/dot_files/vim/style.yapf ~/.style.yapf
 
 # scala https://github.com/derekwyatt/vim-scala

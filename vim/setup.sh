@@ -1,5 +1,3 @@
-set -e
-
 # clang-format
 sudo apt-get install -y vim clang-format-3.8
 sudo ln -s /usr/bin/clang-format-3.8 /usr/bin/clang-format

@@ -87,3 +87,6 @@ alias pipupgradeall="pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xarg
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
+
+# https://support.apple.com/en-us/HT208050
+export BASH_SILENCE_DEPRECATION_WARNING=1

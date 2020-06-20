@@ -20,8 +20,8 @@ git clone https://github.com/google/vim-maktaba.git  # used by codefmt
 git clone https://github.com/google/vim-glaive.git  # used by codefmt
 git clone https://github.com/google/vim-codefmt.git
 git clone https://github.com/Vimjas/vim-python-pep8-indent.git
-git clone https://github.com/fatih/vim-go.git
-echo "run in vim :GoInstallBinaries"
+# git clone https://github.com/fatih/vim-go.git
+# echo "run in vim :GoInstallBinaries"
 
 cd ~/.vim/indent
 wget http://www.vim.org/scripts/download_script.php?src_id=14772 -O cpp.vim

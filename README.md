@@ -41,7 +41,7 @@
 * iterm2
   https://www.iterm2.com/downloads.html
 * homebrew
-  `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 * istat menus
   https://bjango.com/mac/istatmenus/
 * mycloud sync

@@ -11,8 +11,6 @@
   https://www.docker.com/community-edition#/download
   * linux `curl -fsSL https://get.docker.com/ | sh`
   * mac https://store.docker.com/editions/community/docker-ce-desktop-mac
-* pycharm
-  https://www.jetbrains.com/pycharm/download
 * chrome
   https://www.google.com/chrome/browser/desktop/
 * chrome alternative 
@@ -20,19 +18,10 @@
     `sudo apt-get install chromium-browser`
   * chrome canary (mac)
     https://www.google.com/chrome/browser/canary.html
-* shadowsocks
-  https://shadowsocks.org/en/download/clients.html
-* sogou pinyin
-  * linux
-    http://pinyin.sogou.com/linux/?r=pinyin
-  * mac
-    http://pinyin.sogou.com/mac/?r=pinyin
-  * windows
-    http://pinyin.sogou.com/
-* logitech options
-  http://support.logitech.com/en_us/software/options
-* setpoint
-  http://support.logitech.com/en_us/software/setpoint
+* wechat input
+  https://z.weixin.qq.com/
+* logitech options+
+  https://www.logitech.com/en-sg/software/logi-options-plus.html
 
 # mac
 
@@ -44,9 +33,6 @@
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 * istat menus
   https://bjango.com/mac/istatmenus/
-* mycloud sync
-  https://support.wdc.com/downloads.aspx?p=266&lang=en
-* disable mouse acceleration `defaults write .GlobalPreferences com.apple.mouse.scaling -1`
 
 
 # ubuntu
